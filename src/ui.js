@@ -1,0 +1,1 @@
+export function createUI({ onRestart }){ const birdsLeftEl=document.getElementById('birdsLeft'); const restartBtn=document.getElementById('restartBtn'); restartBtn.addEventListener('click', ()=>onRestart()); return { setBirdsLeft(n){ birdsLeftEl.textContent = `Passarinhos: ${n}`; } }; }
